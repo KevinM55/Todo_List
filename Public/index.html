@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <section class="section is-fullheight">
+        <div class="container">
+            <h1 class="title has-text-centered">Task List</h1>
+
+            <!-- Task Input and Add Button -->
+            <div class="field has-addons is-centered">
+                <div class="control is-expanded">
+                    <input type="text" id="new-task" class="input is-small" placeholder="Enter a new task">
+                </div>
+                <div class="control">
+                    <button class="button is-primary is-small" id="add-task-btn">Add Task</button>
+                </div>
+            </div>
+            
+
+            <!-- Task List Container -->
+            <div id="task-list-container" class="box"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
