@@ -1,0 +1,97 @@
+body {
+    background-color: #191d2b;
+}
+
+h1 {
+    color: #191d2b;
+    font-weight: bold; /* Make the title bold */
+    font-size: 3rem;  /* Make the title larger */
+    margin-bottom: 20px;
+}
+
+/* Magnify task on hover */
+.task-item {
+    transition: transform 0.3s ease;
+}
+
+.task-item:hover {
+    transform: scale(1.05);
+}
+
+/* Task styling when completed (turn red and remove strikethrough) */
+.task-item.completed {
+    background-color: #ffcccc;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+/* Task list styling */
+#task-list-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styling the input field to match task list width */
+input#new-task {
+    max-width: 400px;  /* Makes the input width consistent with task list */
+    width: 100%;
+    font-size: 1.1rem; /* Increase the font size slightly */
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure input and button are visually aligned */
+button#add-task-btn {
+    font-size: 1.1rem; /* Same font size as input field */
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/* Center the input box and button together */
+.field.has-addons.is-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  /* Space between input and button */
+    margin-top: 20px;
+}
+.input.is-small {
+    width: 300px; /* Adjust the width of the input field */
+}
+
+/* Optional: Style for the button */
+.button.is-primary.is-small {
+    width: 120px; /* Adjust the width of the button */
+}
+/* Fix input and button alignment for small screens */
+@media (max-width: 768px) {
+    #task-list-container {
+        padding: 10px;
+    }
+
+    input#new-task {
+        max-width: 90%;
+    }
+
+    button#add-task-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Button hover effect */
+button#add-task-btn:hover {
+    background-color: #218838; /* Green hover */
+    color: white;
+}
+
+/* Styling for the completed task */
+button.complete-btn, button.delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
